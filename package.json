@@ -1,0 +1,39 @@
+{
+  "name": "indu-foundation",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "wrangler pages dev ./build",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "deploy": "npm run build && wrangler pages deploy ./build --project-name indu-foundation"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-cloudflare": "^4.0.0",
+    "@sveltejs/enhanced-img": "^0.3.0",
+    "@sveltejs/kit": "^2.5.0",
+    "@sveltejs/vite-plugin-svelte": "^4.0.0",
+    "@types/node": "^20.0.0",
+    "@types/three": "^0.165.0",
+    "svelte": "^5.0.0",
+    "svelte-check": "^3.8.0",
+    "typescript": "^5.4.0",
+    "vite": "^5.2.0",
+    "wrangler": "^3.45.0"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.4.0",
+    "@supabase/supabase-js": "^2.43.0",
+    "@upstash/ratelimit": "^1.2.0",
+    "@upstash/redis": "^1.31.0",
+    "gray-matter": "^4.0.3",
+    "gsap": "^3.12.5",
+    "mdsvex": "^0.11.0",
+    "resend": "^3.2.0",
+    "shiki": "^1.6.0",
+    "three": "^0.165.0",
+    "zod": "^3.23.0"
+  }
+}

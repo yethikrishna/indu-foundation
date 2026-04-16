@@ -1,0 +1,17 @@
+name = "indu-foundation"
+compatibility_date = "2026-01-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "./build"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "indu_foundation"
+database_id = "PASTE_YOUR_D1_ID_HERE"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "PASTE_YOUR_KV_ID_HERE"
+
+[vars]
+PUBLIC_APP_URL = "https://indu-foundation.pages.dev"
+PUBLIC_APP_NAME = "INDU Foundation"
